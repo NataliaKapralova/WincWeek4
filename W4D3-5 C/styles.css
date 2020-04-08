@@ -1,0 +1,49 @@
+.social-media.blog:hover {
+  background-color: #e17b77;
+  width: 100px;
+
+}
+
+
+.social-media.facebook {
+  background-color: #3b5998;
+  width: 100px;
+}
+
+.social-media.twitter {
+  background-color: #00aced;
+  width: 100px;
+}
+
+.social-media.github {
+  background-color: #333;
+  width: 100px;
+}
+
+.social-media.linkedin {
+  background-color: #007bb6;
+  width: 100px;
+}
+
+.social-media-container li {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+}
+
+.fa-laptop-code::before {
+  content: "\f5fc";
+}
+.fa-twitter::before {
+  content: "\f099";
+}
+.fa-linkedin-in::before {
+  content: "\f0e1";
+}
+.fa-facebook-f::before {
+  content: "\f39e";
+}
+.fa-github::before {
+  content: "\f09b";
+}
+

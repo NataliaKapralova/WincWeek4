@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:700);
+
+body {
+  background: white;
+  text-align: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  padding-left: 0;
+  background-color: lightblue;
+}
+
+li {
+  list-style-type: none;
+}
+
+.currentPage {
+  background-color:grey;
+}
+
+li:hover {
+  background-color: aqua;
+}
+
+#menufocus:focus {
+  border: 2px solid darkblue;
+}
+h1 {
+  color: black;
+  font-family: "Oswald";
+  font-weight: 700;
+  position: relative;
+  margin: 30px auto;
+  text-transform: uppercase;
+  width: 550px;
+}
+
+h1::before,
+h1::after {
+  background-color: #4a90e2;
+  content: "";
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+}
+
+h1::before {
+  left: 10px;
+  top: 10px;
+  border-radius: 200px 0px 0px 200px;
+}
+
+h1::after {
+  border-radius: 0px 200px 200px 0px;
+  left: 510px;
+  top: 10px;
+}
+
+.first:hover {
+  color: lightblue;
+  text-transform: uppercase;
+}
+
+.second:active {
+  color: red;
+  font-style: italic;
+}
+
+.third:visited {
+  color: yellow;
+}
+
+#text:focus {
+  color: green;
+  font-size: 20px;
+}

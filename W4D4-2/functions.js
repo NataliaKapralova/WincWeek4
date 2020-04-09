@@ -1,25 +1,17 @@
-const addOne = function(numbers) {
-	
-}
+const addOne = function (numbers) {
+  return numbers.map((number) => number + 1);
+};
 
 module.exports = addOne;
 
+const findNeedle = function (words, wordToBeFound) {
+  return words.indexOf(wordToBeFound);
+};
 
-const getWordLengths = function(someWords) {
-    const myArray = [31, 57, 12, 5];
+module.exports = findNeedle;
 
-    const unchanged = [31, 57, 12, 5];
-    const expected = [32, 58, 13, 6];
-    const output = addOne(myArray);
-  
+const getWordLengths = function (someWords) {
+  return someWords.map((word) => word.length);
 };
 
 module.exports = getWordLengths;
-
-const findNeedle = function(words) {
-    if(words === 3) { 
-        return expected
-    }
-  };
-  
-  module.exports = findNeedle;
